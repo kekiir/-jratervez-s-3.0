@@ -1,0 +1,70 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Veranda, sans-serif;
+}
+
+
+.login-div {
+    display: inline-block;
+    padding: 15px;
+    box-shadow: 0 0 2px;
+}
+
+.login-div input {
+padding: 3px;
+display: block;
+margin-bottom: 7px;
+}
+
+.login-div button:hover {
+    box-shadow: 2px 2px 3px #a7a7a7;
+}
+
+.login-div input:focus {
+    box-shadow: 2px 2px 3px #c0c0c0;
+    border: aqua 50px;
+
+}
+
+.login-div input:active {
+    box-shadow: 2px 2px 3px #c0c0c0;
+    border: aqua;
+}
+
+ul li:last-child {
+text-decoration: underline;
+}
+
+ul li:first-child {
+    color: red;
+    }
+
+    ul li:nth-child(2) {
+        color: blue;
+        }
+
+/*
+body div.login-div {
+padding: 15px;
+border: solid 0px #c52e2e;
+box-shadow: 0 0 2px #c4c2c2;
+display: inline-block;
+}*/
+
+/*
+.login-div input{
+padding: 3px;
+display: block;
+margin-bottom: 7px;
+}
+.login-div input[class^="blue"] {
+    border: solid 1px rgb(212, 212, 212);
+    }
+    
+    .login-div input[class$="red"] {
+        border: solid 1px rgb(212, 212, 212);
+        }
+input[class*="control"] {
+display: block;
+}
+*/

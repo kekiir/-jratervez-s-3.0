@@ -1,0 +1,26 @@
+#colorDIV {
+display: inline-block;
+width: 100px;
+height: 100px;
+background-color: rgba(0,0,200,0.157)
+
+}
+
+/*
+0123456789ABCDEF
+2 es számrendszer 01
+3 as számrendszer 012
+10 es számrendszer 0123456789
+16 os számrendszer 0123456789ABCDEF
+
+255 (10)=FF (16)
+
+255 (10)= 2*100+5*10+5*1
+(16)FF= F*16+F*1=15*16+15*1
+
+rgb(255,255,255) = #FFFFFF
+*/
+html{
+
+    background: url("../img/programmer.jpg") no-repeat;
+}
