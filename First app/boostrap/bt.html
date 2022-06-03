@@ -65,29 +65,32 @@
       <div class="col-3"></div>
       <div class="col-6">
         <h3>Hamburger rendelés</h3>
-        <div class="mb-3">
-          <label for="" name="feltet">
-            <span class="top-input"> Feltét </span>
+        <form id="orderForm" action="">
 
-          </label>
-          <input type="text" name="top-input" class="form-control">
-        </div>
-        <div class="mb-3">
-          <label for="">Mennyiség</label>
-          <input type="number" name="amount-input" class="form-control" value="1">
-          <small class="form-text text-muted">
-            Minumum 1, maximum 10db
-          </small>
-        </div>
-
-        <div class="mb-3">
-
-          Fizetendő: <span class="show-amount"> 0 </span> Ft
-        </div>
-
-        <div class="mb-3">
-          <button onclick="calcAmount()" class="btn btn-primary">Megrendelés</button>
-        </div>
+          <div class="mb-3">
+            <label for="" name="feltet">
+              <span class="top-input"> Feltét </span>
+  
+            </label>
+            <input  id="top-input" type="text" name="top-input" class="form-control">
+          </div>
+          <div class="mb-3">
+            <label for="">Mennyiség</label>
+            <input type="number" name="amount-input" class="form-control" value="1">
+            <small class="form-text text-muted">
+              Minumum 1, maximum 10db
+            </small>
+          </div>
+  
+          <div class="mb-3">
+  
+            Fizetendő: <span class="show-amount"> 0 </span> Ft
+          </div>
+  
+          <div class="mb-3">
+            <button type="submit" onclick="calcAmount()"  class="btn btn-primary">Megrendelés</button>
+          </div>
+        </form>
       </div>
       <div class="col-3"></div>
 
@@ -100,7 +103,8 @@
 
 
   <script src="/js/main.js"></script>
-  <script src="js/scope.js"></script>
+ <!--  <script src="js/algo.js"></script> 
+   <script src="js/scope.js"></script> > -->
 
 </body>
 
