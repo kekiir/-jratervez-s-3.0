@@ -68,7 +68,6 @@ parent.removeChild(helpText);
 // Windoww events
 /*
 let sendButton = document.querySelector('button[class="btn btn-primary"]');
-
 sendButton.onclick = function () {
     alert("Hello JS!)");
 }
@@ -99,3 +98,63 @@ orderForm.addEventListener("submit", function (ev) {
     }
 console.log(valuesGlobal);
 })
+
+// Switch
+new Date(2019, 5, 2); //0= január 1=február
+new Date().getDay(); // vasárnaptól kezdődik, vasárnap=0
+
+let weekDay = new Date().getDay();
+let dayName = '';
+switch (weekDay) {
+    case 0: dayName = "Vas";
+        break
+    case 1: dayName = "Hét";
+        break
+    case 2: dayName = "Ked";
+        break
+    case 3: dayName = "Sze";
+        break
+    case 4: dayName = "Csü";
+        break
+    case 5: dayName = "Pén";
+        break
+    case 6: dayName = "Szo";
+        break
+    default: dayName = "unknown"
+};
+console.log(dayName);
+
+//While
+let i = 0;
+while (i < 10) {
+    i++
+}
+console.log(i);
+
+i = 0;
+let animal = { name: "Cat", age: 3 };
+let keys = Object.keys(animal);
+while (i < keys.length) {
+    console.log(animal[keys[i]]);
+    i++;
+};
+
+
+/*
+dowhile
+i=10
+do {
+    console.log(i);
+    i++;
+}
+while (i<0); 
+*/
+
+let alertCloseButtons = document.querySelectorAll("#btn-close");
+let alertCloseEventHundlerFunction= function(ev) {
+    this.parentElement.style.display="none";
+}
+for (let i = 0; i < alertCloseButtons.length; i++) {
+    alertCloseButtons[i].addEventListener("click", alertCloseEventHundlerFunction);
+}
+
